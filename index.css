@@ -6,7 +6,7 @@ html {
 }
 /* font and typography */
 :root {
-  /* --body-font:  */
+  --body-font: 'Anonymous Pro', monospace;
   --big-font-size: 6.25rem;
   --h2-font-size: 1.25rem;
   --normal-font-size: .938rem;
@@ -43,7 +43,7 @@ html {
 /* base */
 body {
   margin: var(--header-height) 0 0 0;
-  /* font-family: var(--body-font); */
+  font-family: var(--body-font);
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
   color: #fff;
@@ -105,7 +105,7 @@ h1, h2, p {
 .section-title {
   position: relative;
   font-size: var(--h2-font-size);
-  color: #fff;
+  color: rgb(189, 3, 245);
   margin: var(--mb-4) 0;
   text-align: center;
 }
@@ -219,7 +219,7 @@ h1, h2, p {
   transition: .3s;
 }
 
-p {
+.home-container p {
   text-align: center;
   position: relative;
   top: 20%;
@@ -256,3 +256,34 @@ span {
     transform: translateY(25px)
   }
 } */
+
+/* about section */
+.about-container {
+  justify-items: center;
+  row-gap: 2rem;
+  text-align: center;
+}
+.about-subtitle {
+  color: rgb(97, 221, 252);
+  padding-bottom: 10px;
+}
+.about-img {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 20%;
+  margin: 0 auto;
+  padding: 1rem;
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+}
+.about-img img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.about-text {
+  margin-bottom: var(--mb-4);
+  font-size: 20px;
+}
