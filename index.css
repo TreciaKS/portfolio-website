@@ -216,9 +216,9 @@ h1, h2, p {
   font-size: var(--big-font-size);
   color: rgb(0, 0, 0);
   line-height: .8;
-  text-shadow: 0 0 3px rgb(255, 255, 255);
-  -webkit-text-shadow: 0 0 3px #aff;
-  -moz-text-shadow: 0 0 3px #aff;
+  text-shadow: 0 0 4px rgb(248, 111, 230);
+  -webkit-text-shadow: 0 0 4px rgb(248, 111, 230);
+  -moz-text-shadow: 0 0 4px rgb(248, 111, 230);
   transition: .3s;
 }
 
@@ -239,7 +239,7 @@ span {
 .heading {
   font-size: 1em;
   color: rgb(0, 0, 0);
-  text-shadow: 0 0px 3px rgb(23, 216, 250);
+  text-shadow: 0 0px 3px rgb(30, 217, 250);
   -webkit-text-shadow: 0 0 3px rgb(11, 252, 240);
   -moz-text-shadow: 0 0 3px rgb(11, 252, 240);
   transition: 2s;
