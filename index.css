@@ -250,6 +250,9 @@ span {
   align-self: flex-end;
   padding-bottom: var(--mb-4);
   animation: float 1s linear infinite;
+  -webkit-animation: float 1s linear infinite;
+  -moz-animation: float 1s linear infinite;
+  -o-animation: float 1s linear infinite;
 }
 /* @keyframes float {
   100% {
@@ -309,7 +312,7 @@ span {
   color: #fff;
   text-align: center;
 }
-.skills-name:hover {
+.skills-name:hover, .work-img a:hover {
   border: 3px dashed rgb(43, 189, 226);
   color: rgb(0, 255, 242);
   cursor: pointer;
@@ -349,4 +352,61 @@ span {
   margin: auto;
   width: 350px;
 }
+}
+/* work section */
+.work-heading {
+  color: rgb(0, 195, 255);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.work-link p {
+  padding-bottom: 30px;
+  font-size: 18px;
+}
+code {
+  color:rgb(118, 127, 255);
+  font-family: monospace;
+  font-variant: small-caps;
+}
+.work-img a {
+  border-radius: 35px;
+  border: 3px solid rgb(189, 3, 245);
+  display: inline-block;
+  padding: 8px 15px;
+  position: relative;
+}
+.work-container {
+  justify-items: center;
+  row-gap: 2rem;
+  column-gap: 20px;
+}
+.work-img {
+  margin: 30px auto;
+  position: relative;
+  overflow: hidden;
+}
+.work-img img {
+  border-radius: .5rem;
+}
+.work-link {
+  position: absolute;
+  bottom: -100%;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  background-color: rgba(0, 0, 0, 0.795);
+  border-radius: .5rem;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: .3s;
+  -moz-transition: .3s;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+}
+.work-img:hover .work-link {
+  bottom: 0;
 }
