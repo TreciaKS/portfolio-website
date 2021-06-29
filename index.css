@@ -230,7 +230,7 @@ span {
   animation: float 1s linear infinite;
   -webkit-animation: float 1s linear infinite;
   -moz-animation: float 1s linear infinite;
-  -o-animation: float 1s linear infinite;
+  -o-animation: float .1s linear infinite;
 }
 @keyframes float {
   100% {
@@ -250,9 +250,13 @@ span {
   padding: 12px 18px;
   border-top-left-radius: 25px;
   border-bottom-right-radius: 25px;
+  animation: bling .2s linear infinite;
+  -webkit-animation: bling .2s linear infinite;
+  -moz-animation: bling .2s linear infinite;
+  -o-animation: bling 5s linear infinite;
 }
 .about-container a:hover {
-  border: 5px dotted rgb(0, 68, 255);
+  border: 2px dotted rgb(0, 68, 255);
   border-radius: 35px;
 }
 .about-subtitle {
@@ -301,7 +305,7 @@ span {
   color: #fff;
   text-align: center;
 }
-.skills-name:hover, .work-img a:hover {
+.work-img a:hover {
   border: 2px dashed rgb(21, 184, 248);
   color: rgb(0, 255, 242);
   cursor: pointer;
@@ -326,7 +330,7 @@ span {
   margin-right: var(--mb-2);
   margin-bottom: var(--mb-3);
   padding: .35rem .5rem;
-  border: 2px dashed rgb(43, 189, 226);
+  border: 4px outset rgb(43, 189, 226);
   border-radius: 35px;
   color: rgb(0, 224, 224);
 }
@@ -360,7 +364,7 @@ code {
 }
 .work-img a {
   border-radius: 35px;
-  border: 3px solid rgb(189, 3, 245);
+  border: 2px solid rgb(4, 204, 218);
   display: inline-block;
   padding: 8px 15px;
   position: relative;
@@ -420,7 +424,7 @@ code {
     }
     .social-container:hover .cover {
       transition: 0s ease;
-      /* transform: translateX(-100%); */
+      transform: translateX(-100%);
       visibility:  hidden;
       -moz-visibility:  hidden;
       -webkit-visibility:  hidden;
@@ -461,6 +465,7 @@ code {
       position: relative;
       left: 6px;
       bottom: 100px;
+      margin: 0 auto;
       margin-top: 20px;
       padding: 12px 10px;
       transition: 1s ease;
@@ -473,10 +478,10 @@ code {
     }
     @keyframes bling {
       50% {
-        border: 3px dashed rgb(0, 214, 252);
+        border: 2px dashed rgb(0, 214, 252);
       }
       100% {
-        border: 4px solid rgb(119, 5, 196);
+        border: 2px solid rgb(196, 5, 37);
       }
     }
     .cover p {
