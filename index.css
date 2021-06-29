@@ -293,7 +293,7 @@ span {
   margin-right: var(--mb-2);
   margin-bottom: var(--mb-3);
   padding: .35rem .5rem;
-  border: 2px solid rgb(195, 23, 201);
+  border: 3px dashed rgb(226, 43, 195);
   border-radius: 35px;
 }
 .skills-box span {
@@ -302,7 +302,7 @@ span {
   text-align: center;
 }
 .skills-name:hover, .work-img a:hover {
-  border: 3px dashed rgb(43, 189, 226);
+  border: 2px dashed rgb(21, 184, 248);
   color: rgb(0, 255, 242);
   cursor: pointer;
 }
@@ -326,8 +326,9 @@ span {
   margin-right: var(--mb-2);
   margin-bottom: var(--mb-3);
   padding: .35rem .5rem;
-  border: 2px dotted rebeccapurple;
+  border: 2px dashed rgb(43, 189, 226);
   border-radius: 35px;
+  color: rgb(0, 224, 224);
 }
 .skills-box span {
   padding: 20px;
@@ -411,16 +412,24 @@ code {
 .social-container {
       height: 40px;
       width: 250px;
-      transition: all .8s;
+      transition: 1s;
       margin: 10px auto;
       margin-bottom: 20px;
+      -webkit-transition: 1s ;
+      -moz-transition: 1s;
     }
     .social-container:hover .cover {
-      transition: .8s ease;
-      transform: translateY(300%);
+      transition: 0s ease;
+      /* transform: translateX(-100%); */
+      visibility:  hidden;
+      -moz-visibility:  hidden;
+      -webkit-visibility:  hidden;
       background-color: transparent;
       color: rgb(157, 252, 138);
       text-shadow: 0 0 0 rgb(157, 252, 138);
+      -webkit-text-shadow: 0 0 0 rgb(157, 252, 138);
+      -moz-text-shadow: 0 0 0 rgb(157, 252, 138);
+      -o-text-shadow: 0 0 0 rgb(157, 252, 138);
     }
     .btns {
       display: flex;
@@ -455,6 +464,8 @@ code {
       margin-top: 20px;
       padding: 12px 10px;
       transition: 1s ease;
+      -webkit-transition: 1s ease;
+      -moz-transition: 1s ease;
       animation: bling .2s linear infinite;
       -webkit-animation: bling .2s linear infinite;
       -moz-animation: bling .2s linear infinite;
