@@ -232,11 +232,11 @@ span {
   -moz-animation: float 1s linear infinite;
   -o-animation: float 1s linear infinite;
 }
-/* @keyframes float {
+@keyframes float {
   100% {
-    transform: translateY(25px)
+    transform: translateY(25px);
   }
-} */
+}
 
 /* about section */
 .about-container, .contact-container {
