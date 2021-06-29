@@ -189,7 +189,7 @@ h1, h2, p {
   top: 10%;
   text-align: center;
   font-size: var(--big-font-size);
-  color: rgb(0, 0, 0);
+  color: rgb(174, 1, 209);
   line-height: .8;
   text-shadow: 0 0 4px rgb(248, 111, 230);
   -webkit-text-shadow: 0 0 4px rgb(248, 111, 230);
@@ -423,8 +423,8 @@ code {
       -moz-transition: 1s;
     }
     .social-container:hover .cover {
-      transition: 0s ease;
-      transform: translateX(-100%);
+      transition: 2s ease;
+      transform: translateX(-300%);
       visibility:  hidden;
       -moz-visibility:  hidden;
       -webkit-visibility:  hidden;
@@ -468,6 +468,7 @@ code {
       margin: 0 auto;
       margin-top: 20px;
       padding: 12px 10px;
+      overflow: hidden;
       transition: 1s ease;
       -webkit-transition: 1s ease;
       -moz-transition: 1s ease;
