@@ -67,31 +67,6 @@ a {
   display: block;
 }
 
-.line {
-  position: relative;
-  bottom: 10px;
-  left: 450px;
-  width: 90px;
-  height: 3px;
-  background-color: rgb(101, 180, 253);
-  transition: .5s;
-}
-li:nth-child(2):hover ~ .line {
-  background-color: rgb(11, 8, 216);
-  transform: translate(126px);
-}
-li:nth-child(3):hover ~ .line {
-  background-color: rgb(89, 12, 190);
-  transform: translate(255px);
-}
-li:nth-child(4):hover ~ .line {
-  background-color: rgb(135, 4, 161);
-  transform: translate(375px);
-}
-li:nth-child(5):hover ~ .line {
-  background-color: rgb(247, 0, 214);
-  transform: translate(520px);
-}
 /* responsive image */
 img {
   max-width: 100%;
@@ -186,7 +161,7 @@ h1, h2, p {
   text-decoration-thickness: 4px;
 }
 .line {
-  background-color: transparent;
+  display: hidden;
 }
 .toggle-nav {
   color: #fff;
@@ -495,4 +470,82 @@ code {
     }
     .cover p {
       margin-top: 8px;
+    }
+    /* Media Queries */
+    @media screen and (min-width: 768px) {
+      body {
+        margin: 0;
+      }
+      section {
+        padding-top: 4rem;
+      }
+      .section-title {
+        margin-bottom: 3rem;
+      }
+      .section-title::after {
+        width: 64px;
+        top: 3rem;
+      }
+      .nav {
+        height: calc(var(--header-height) + 1rem);
+      }
+      .nav-list {
+        display: flex;
+      }
+      .nav-item {
+        margin-left: var(--mb-4);
+        margin-bottom: 0;
+      }
+      .nav-toggle {
+        display: none;
+      }
+      .line {
+      position: relative;
+      top: 25px;
+      right: 425px;
+      width: 80px;
+      height: 3px;
+      background-color: rgb(101, 180, 253);
+      transition: .5s;
+    }
+      li:nth-child(2):hover ~ .line {
+        background-color: rgb(11, 8, 216);
+        transform: translate(78px);
+      }
+      li:nth-child(3):hover ~ .line {
+        background-color: rgb(89, 12, 190);
+        transform: translate(168px);
+      }
+      li:nth-child(4):hover ~ .line {
+        background-color: rgb(135, 4, 161);
+        transform: translate(255px);
+      }
+      li:nth-child(5):hover ~ .line {
+        background-color: rgb(247, 0, 214);
+        transform: translate(346px);
+      }
+      .about-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* display: flex;
+        justify-content: center; */
+        align-items: center;
+        text-align: initial;
+        padding: 4rem 0;
+      }
+      .about-img {
+        width: 200px;
+        height: 200px;
+      }
+      .about-img img {
+        width: 165px;
+      }
+      .skills-container, .work-container {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        margin: 0 auto;
+      }
+      .work-heading {
+        padding-bottom: 10px;
+      }
     }
