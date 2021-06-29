@@ -432,11 +432,11 @@ code {
       width: 50px;
       filter : drop-shadow( 3px 0px 0px rgb(0, 132, 255));
     }
-    button:hover img {
+    .btns a:hover img {
       transform: scale(1.2);
       filter: drop-shadow( 0 0 4px rgb(0, 132, 255));
     }
-    button {
+    .btns a {
       border: none;
       background-color: transparent;
     }
