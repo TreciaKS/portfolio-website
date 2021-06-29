@@ -39,4 +39,4 @@ scroll.reveal(".work-img", {});
 
 // contact scroll 
 scroll.reveal(".contact-container", {})
-scroll.reveal(".social-container", {delay: 300})
+scroll.reveal(".social-container", {delay: 350})
