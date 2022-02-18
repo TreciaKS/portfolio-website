@@ -433,9 +433,10 @@ code {
       -moz-transition: 1s;
     }
     .social-container:hover .cover {
-      transition: 1s ease;
+      transition: 2s ease;
       transform: translateY(100%);
       opacity: 0;
+      display: none;
       background-color: transparent;
       color: rgb(157, 252, 138);
       text-shadow: 0 0 0 rgb(157, 252, 138);
@@ -451,11 +452,10 @@ code {
     }
     .social-container img {
       width: 50px;
-      filter : drop-shadow( 3px 0px 0px rgb(0, 132, 255));
     }
     .btns a:hover img {
       transform: scale(1.2);
-      filter: drop-shadow( 0 0 4px rgb(0, 132, 255));
+      filter: drop-shadow( 0 0 3px rgb(29, 29, 29));
     }
     .btns a {
       border: none;
