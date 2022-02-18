@@ -334,13 +334,13 @@ span {
   justify-content: center;
   flex-direction: column;
 }
- .skills-name {
+.skills-name {
   display: inline;
   font-size: 20px;
   margin-right: var(--mb-2);
   margin-bottom: var(--mb-3);
   padding: .35rem .5rem;
-  border: 4px outset rgb(43, 189, 226);
+  border: 2px outset rgb(1, 68, 85);
   border-radius: 35px;
   color: rgb(0, 224, 224);
 }
