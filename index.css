@@ -195,15 +195,32 @@ h1, h2, p {
   text-align: center;
   font-family: 'Codystar', 'Jacques Francois Shadow', cursive;
   font-size: var(--big-font-size);
-  color: rgb(0, 221, 250);
+  color: #000;
   line-height: .8;
-  text-shadow: 0 0 4px rgb(65, 0, 185);
-  -webkit-text-shadow: 0 0 4px rgb(40, 0, 185);
-  -moz-text-shadow: 0 0 4px rgb(40, 0, 185);
+  text-shadow: 0 0 1px rgb(123, 229, 248);
+  -webkit-text-shadow: 0 0 1px rgb(123, 229, 248);
+  -moz-text-shadow: 0 0 1px rgb(123, 229, 248);
   transition: .3s;
   -webkit-transition: .3s;
   -o-transition: .3s;
   -moz-transition: .3s;
+  animation: game .1s linear infinite;
+  -webkit-animation: game .5s linear infinite;
+  -moz-animation: game .1s linear infinite;
+  -o-animation: game .1s linear infinite;
+}
+
+@keyframes game {
+  50% {
+    text-shadow: 0 0 2px rgb(0, 0, 0);
+    -webkit-text-shadow: 0 0 2px rgb(0, 0, 0);
+    -moz-text-shadow: 0 0 2px rgb(0, 0, 0);
+    }
+  100% {
+  text-shadow: 0 0 2px rgb(187, 245, 255);
+  -webkit-text-shadow: 0 0 2px rgb(187, 245, 255);
+  -moz-text-shadow: 0 0 2px rgb(187, 245, 255);
+  }
 }
 
 .home-container p {
