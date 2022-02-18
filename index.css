@@ -487,10 +487,10 @@ code {
     }
     @keyframes bling {
       50% {
-        border: 2px dashed rgb(0, 214, 252);
+        border: 2px dashed rgb(252, 193, 0);
       }
       100% {
-        border: 2px solid rgb(196, 5, 37);
+        border: 2px ridge rgb(5, 196, 196);
       }
     }
     .cover p {
