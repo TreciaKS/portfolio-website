@@ -216,13 +216,13 @@ span {
   writing-mode: horizontal-tb;
   font-size: var(--big-font-size);
   color: rgb(0, 0, 0);
-  text-shadow: 0 0px 4px rgb(204, 0, 255);
+  text-shadow: 0 0px 4px rgb(255, 0, 200);
   -webkit-text-shadow: 0 0 4px rgb(255, 0, 200);
   -moz-text-shadow: 0 0 4px rgb(255, 0, 200);
 }
 .heading {
   font-size: 1em;
-  color: rgb(221, 0, 0);
+  color: rgb(253, 249, 30);
   font-family: 'Codystar', 'Jacques Francois Shadow', cursive;
   transition: 2s;
   -webkit-transition: 2s;
