@@ -17,11 +17,11 @@ const scroll = ScrollReveal ({
   origin: "top",
   distance: "80px",
   duration: 2000,
-  reset: true
+  reset: false
 })
 // home scroll
 scroll.reveal(".home-title", {})
-scroll.reveal(".home-scroll", {delay: 250})
+scroll.reveal(".home-scroll", {delay: 150})
 
 // about scroll 
 scroll.reveal(".about-img", {delay: 400})
