@@ -204,10 +204,10 @@ h1, h2, p {
   -webkit-transition: .3s;
   -o-transition: .3s;
   -moz-transition: .3s;
-  animation: game .1s linear infinite;
+/*   animation: game .1s linear infinite;
   -webkit-animation: game .5s linear infinite;
   -moz-animation: game .1s linear infinite;
-  -o-animation: game .1s linear infinite;
+  -o-animation: game .1s linear infinite; */
 }
 
 @keyframes game {
