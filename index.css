@@ -170,10 +170,10 @@ h1, h2, p {
   color: #fff;
   margin-right: 25px;
   cursor: pointer;
-  filter: drop-shadow( 0 0 1px rgb(204, 0, 255));
-  -webkit-filter: drop-shadow( 0 0 1px rgb(204, 0, 255));
-  -moz-filter: drop-shadow( 0 0 1px rgb(204, 0, 255));
-  -o-filter: drop-shadow( 0 0 1px rgb(204, 0, 255));
+  filter: drop-shadow( 0 0 1px rgb(255, 255, 255));
+  -webkit-filter: drop-shadow( 0 0 1px rgb(255, 255, 255));
+  -moz-filter: drop-shadow( 0 0 1px rgb(255, 255, 255));
+  -o-filter: drop-shadow( 0 0 1px rgb(255, 255, 255);
 }
 /* show toggle menu */
 .show {
