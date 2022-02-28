@@ -395,6 +395,14 @@ code {
   display: inline-block;
   padding: 8px 15px;
   position: relative;
+  animation: bling .2s linear infinite;
+  -webkit-animation: bling .2s linear infinite;
+  -moz-animation: bling .2s linear infinite;
+  -o-animation: bling 5s linear infinite;
+}
+.work-img a:hover {
+  border-radius: 0;
+  border: 2px solid rgb(4, 0, 255);
 }
 .work-container {
   /* display: flex;
